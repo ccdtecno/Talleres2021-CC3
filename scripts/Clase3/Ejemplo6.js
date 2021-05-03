@@ -2,7 +2,7 @@
 
 let key = '7c59ef7f3557f92679933dafa19e09fd';//Sustituir por API Key
 //URL para descargar clima actual en Ciudad de México
-let url = 'https://api.openweathermap.org/data/2.5/weather?q=Mexico&appid='+key; 
+let url = 'https://api.openweathermap.org/data/2.5/weather?q=Mexico&appid='+key+'&units=metric'; 
 //Crear variables para guardar datos
 let data;
 let clima;

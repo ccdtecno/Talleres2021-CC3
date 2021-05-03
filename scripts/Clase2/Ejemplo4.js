@@ -4,7 +4,7 @@ let contador = 0;
 //El archivo puede tardar en cargar poniéndolo en el método preload
 //aseguramos que  nuestro programa comience una vez que lo cargamos
 function preload(){
-  data =  loadJSON("/scripts/data/data.json")
+  data =  loadJSON("./scripts/data/data.json")
 }
 
 function setup() {

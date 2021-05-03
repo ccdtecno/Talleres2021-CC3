@@ -31,11 +31,12 @@
 }
 
 body {
-    
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 header {
     background: var(--dark-green);
+    min-width: 320px;
 }
 
 footer {
@@ -47,6 +48,7 @@ footer {
     align-items: center;
     color: var(--off-white);
     padding:8px;
+    min-width: 320px;
 }
 
 main {
@@ -71,6 +73,12 @@ main {
     justify-self: center;
     color: var(--off-white);
 }
+
+.header__menu-container .header__title-container h1{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
 .header__menu-container .header__ccd-container{
     display: grid;
     justify-self: right;
@@ -90,12 +98,12 @@ main {
     text-align: left;
     background: var(--dark-green);
     box-shadow: -4px -4px 4px var(--warm-black);
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .header__menu h3 {
     color: var(--off-white);
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .header__menu-container .header__menu:hover ul {
@@ -145,22 +153,24 @@ main {
 }
 
 .main-gallery__text-container{
-    background: var(--soft-green);
+    background: var(--warm-white);
     grid-column: 1/2;
     margin:1rem;
     min-width: 220px;
     width:90%;
     justify-self: center;
     box-shadow: 0 0 8px var(--green-shadow);
+    border-radius: 8px;
 }
 
 .main-gallery{
     display: grid;
     grid-template-columns:auto auto ;
     width: 100%;
+    min-width: 320px;
     justify-content: space-around;
     align-items: center;
-    background: var(--soft-green);
+    background: var(--cold-white);
 }
 
 /* //////////////////// MAIN SKETCH //////////////// */
@@ -170,17 +180,21 @@ main {
     grid-column: 2/3;
     width:100%;
     justify-self: center;
+    
 }
 
 
 #main__sketch {
     display: flex !important;
     justify-content: center !important;  
+    
 }
 
 #main__sketch canvas {
     width: 100%;
+    min-width: 320px;
     height:auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -224,7 +238,8 @@ footer a{
   }
 
   .footer__text--container {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 
 
@@ -232,7 +247,7 @@ footer a{
 
 .button__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .button__gallery{
@@ -243,15 +258,17 @@ footer a{
     color: var(--off-white);
     font-size: 1.4rem;
     font-weight: bolder;
-    background: #044317;
-    box-shadow:  1px 1px 2px #033914,
-                -1px -1px 2px #054d1a;
+    background: var(--medium-green);
+    box-shadow:  1px 1px 2px #4e9561,
+    -1px -1px 2px #6ed389;
+    border-radius: 8px;
+    border: none;
 }
 
 .button__gallery:hover{
     cursor: pointer;
-    box-shadow: inset 2px 2px 4px #033914,
-            inset -2px -2px 4px #054d1a;
+    box-shadow:  inset 1px 1px 2px #4e9561,
+    inset -1px -1px 2px #6ed389;
 
 }
 

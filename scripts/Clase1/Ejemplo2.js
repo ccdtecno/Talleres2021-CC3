@@ -12,8 +12,24 @@ function setup() {
   //Creo un boton e inserto el texto que va en su interior
   boton = createButton('Cambiar Día');
   boton.parent('main__sketch');
+  boton.style('background-color', '#5eb475');
+  boton.style('align-self', 'flex-end');
+  boton.style('border', 'none');
+  boton.style('border-radius', '8px');
+  boton.style('padding', '0.6rem');
+  boton.style('color', 'white');
+  boton.style('position', 'absolute');
+  boton.style('margin', '2rem');
+  boton.style('box-shadow', '1px 1px 2px #4e9561, -1px -1px 2px #6ed389');
+  
+  boton.mouseMoved(() => {
+    boton.style('box-shadow', 'inset 1px 1px 2px #4e9561, inset -1px -1px 2px #6ed389');
+  });
+  boton.mouseOut(() => {
+    boton.style('box-shadow', '1px 1px 2px #4e9561, -1px -1px 2px #6ed389');
+  });
   //Posiciono el boton en mi canvas
-  // boton.position(width/2,10);
+  // boton.position(0,-10);
   //Cada que el boton sea presionado voy a ejecutar una funcion
   //llamada cambiarDia
   boton.mousePressed(cambiarDia);
@@ -21,6 +37,7 @@ function setup() {
 
 function draw() {
   background(220); 
+  
   //Aqui mi círculo y texto toman el valor del arreglo
   //en que se encuentre mi variable contador 
   ellipse(width/2,height/2,asistentes[contador]*10);

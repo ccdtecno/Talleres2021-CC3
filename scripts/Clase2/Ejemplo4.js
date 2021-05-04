@@ -6,7 +6,7 @@ let myFont;
 //aseguramos que  nuestro programa comience una vez que lo cargamos
 function preload(){
   data =  loadJSON("./scripts/data/data.json")
-  myFont = loadFont('/assets/LEMONMILK-Bold.otf');
+  myFont = loadFont('./assets/LEMONMILK-Bold.otf');
 }
 
 function setup() {

@@ -6,13 +6,14 @@ let myFont;
 //aseguramos que  nuestro programa comience una vez que lo cargamos
 function preload(){
   data =  loadJSON("./scripts/data/data.json")
-  myFont = loadFont('LEMONMILK-Bold.otf');
+  myFont = loadFont('/assets/LEMONMILK-Bold.otf');
 }
 
 function setup() {
   let cnv = createCanvas(800, 600);
-  textFont(myFont);
   cnv.parent('main__sketch');
+  textFont(myFont);
+  
 }
 
 function draw() {

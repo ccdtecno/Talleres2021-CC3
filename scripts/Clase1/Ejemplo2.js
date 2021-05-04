@@ -56,7 +56,7 @@ function cambiarDia(){
   
 //Empleo una condicional, si el contador es menor al tamaño del arreglo asistentes
 //El contador incrementará en uno
-  if(contador<asistentes.length){
+  if(contador<asistentes.length - 1){
      contador = contador + 1 ;
 //De no cumplirse la condición anterior el contador reinicia en 0
   } else {

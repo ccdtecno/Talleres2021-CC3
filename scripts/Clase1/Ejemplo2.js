@@ -4,6 +4,7 @@ let boton;
 //Declaro una variable para usar como contador
 //Inicializa en 0
 let contador = 0;
+let col = [[150,200, 56], [50,150,84], [0,120,230], [80,80,80]];
 
 
 function setup() {
@@ -36,11 +37,17 @@ function setup() {
 }
 
 function draw() {
-  background(220); 
+  background(34, 129, 144 ); 
   
   //Aqui mi círculo y texto toman el valor del arreglo
   //en que se encuentre mi variable contador 
+
+  fill(col[contador]);
+  stroke(255);
+  strokeWeight(2);
   ellipse(width/2,height/2,asistentes[contador]*10);
+  fill(255);
+  textSize(20);
   text(asistentes[contador],width/2,height/2);
 }
 //Esta es una función que estoy creando, es la que se va a llamar
@@ -49,7 +56,7 @@ function cambiarDia(){
   
 //Empleo una condicional, si el contador es menor al tamaño del arreglo asistentes
 //El contador incrementará en uno
-  if(contador<asistentes.length){
+  if(contador<asistentes.length - 1){
      contador = contador + 1 ;
 //De no cumplirse la condición anterior el contador reinicia en 0
   } else {
